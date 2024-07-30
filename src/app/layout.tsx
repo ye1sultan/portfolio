@@ -42,6 +42,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="9tb0U1f3F2Zt0daTWOuLW7YfwAOFbcpsY3AcKqD-ihU"
+        />
+      </head>
       <body
         className={cn(
           "bg-zinc-950 antialiased text-neutral-50 container py-10 tracking-wide",
