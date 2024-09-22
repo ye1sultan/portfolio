@@ -9,10 +9,7 @@ const overpass = Overpass({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: "Yelsultan's Portfolio",
-    template: "%s | Yelsultan's Portfolio",
-  },
+  title: "Yelsultan Niyaztay Portfolio",
   description: "This is my portfolio.",
   openGraph: {
     title: "Yelsultan's Portfolio",
@@ -28,9 +25,6 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
     },
   },
 };
@@ -42,12 +36,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="9tb0U1f3F2Zt0daTWOuLW7YfwAOFbcpsY3AcKqD-ihU"
-        />
-      </head>
       <body
         className={cn(
           "bg-zinc-950 antialiased text-neutral-50 container py-10 tracking-wide",
