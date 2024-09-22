@@ -5,7 +5,8 @@ export const Header = () => {
     <header>
       <nav className="flex gap-6">
         <Link href="/home">home</Link>
-        <Link href="/blog">blog</Link>
+        <Link href="/experience">experience</Link>
+        {/* <Link href="/blog">blog</Link> */}
       </nav>
     </header>
   );
