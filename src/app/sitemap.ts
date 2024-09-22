@@ -1,9 +1,13 @@
 export const baseUrl = "https://portfolio-yelsultan.vercel.app";
 
+const staticRoutes = ["/home", "/blog"];
+
 export default async function sitemap() {
-  let routes = ["/home", "/blog"].map((route) => ({
+  const currentDate = new Date().toISOString().split("T")[0];
+
+  const routes = staticRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString().split("T")[0],
+    lastModified: currentDate,
   }));
 
   return routes;
