@@ -1,13 +1,7 @@
+import { IBlog } from "@/shared/types/blog";
 import Link from "next/link";
 
-interface BlogItemProps {
-  name: string;
-  date: string;
-  link: string;
-  description: string;
-}
-
-export const BlogItem = ({ name, date, link, description }: BlogItemProps) => {
+export const BlogItem = ({ name, date, link, description }: IBlog) => {
   return (
     <div>
       <div className="flex w-full gap-2 justify-between items-start mb-4">
