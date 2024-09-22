@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        xs: "374px",
+      },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
       },
