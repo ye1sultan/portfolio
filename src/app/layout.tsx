@@ -1,4 +1,5 @@
 import { cn } from "@/shared/lib/utils";
+import { Footer } from "@/shared/widgets/footer";
 import { Header } from "@/shared/widgets/header";
 import { Metadata } from "next";
 import { Overpass } from "next/font/google";
@@ -38,12 +39,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-zinc-950 antialiased text-neutral-50 container py-10 tracking-wide",
+          "bg-neutral-950 antialiased text-neutral-50 container py-10 tracking-wide",
           overpass.className,
         )}
       >
         <Header />
-        <main className="min-h-screen w-full pt-16">{children}</main>
+        <main className="w-full pt-16 mb-[10%]">{children}</main>
+        <Footer />
       </body>
     </html>
   );
