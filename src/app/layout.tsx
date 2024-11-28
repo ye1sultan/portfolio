@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-neutral-950 antialiased text-neutral-50 container py-10 tracking-wide",
+          "bg-neutral-950 antialiased text-neutral-50 container py-10 tracking-wide px-4 sm:px-8",
           overpass.className,
         )}
       >
