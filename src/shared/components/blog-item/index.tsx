@@ -9,7 +9,7 @@ export const BlogItem = ({ name, date, link, description }: IBlog) => {
   return (
     <AccordionItem value={name}>
       <AccordionTrigger className="py-5" hideIcon>
-        <div className="flex w-full justify-between items-start">
+        <div className="flex w-full justify-between items-start gap-4">
           <h4 className="text-xl">{name}</h4>
           <p className="text-neutral-300 shrink-0 text-base">{date}</p>
         </div>
