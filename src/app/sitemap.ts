@@ -1,6 +1,6 @@
 export const baseUrl = "https://portfolio-yelsultan.vercel.app";
 
-const staticRoutes = ["/home", "/experience"];
+const staticRoutes = ["/home", "/experience", "/education"];
 
 export default async function sitemap() {
   const currentDate = new Date().toISOString().split("T")[0];

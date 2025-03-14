@@ -1,26 +1,36 @@
 import { IBlog } from "@/shared/types/blog";
-import Link from "next/link";
+import {
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 
 export const BlogItem = ({ name, date, link, description }: IBlog) => {
   return (
-    <div>
-      <div className="flex w-full gap-2 justify-between items-start mb-4">
-        <Link
-          href={link}
-          target="_blank"
-          className="text-xl underline underline-offset-4"
-        >
-          {name}
-        </Link>
-        <p className="text-neutral-300 shrink-0">{date}</p>
-      </div>
-      <ul className="flex flex-col gap-1">
-        {description?.map((item, index) => (
-          <li key={index} className="list-inside list-disc">
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <AccordionItem value={name}>
+      <AccordionTrigger className="py-5" hideIcon>
+        <div className="flex w-full justify-between items-start">
+          <h4 className="text-xl">{name}</h4>
+          <p className="text-neutral-300 shrink-0 text-base">{date}</p>
+        </div>
+      </AccordionTrigger>
+      <AccordionContent>
+        <ul className="flex flex-col gap-1 text-base">
+          {description?.map((item, index) =>
+            typeof item === "string" ? (
+              <li
+                key={index}
+                className="list-inside list-disc"
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
+            ) : (
+              <li key={index} className="list-inside list-disc">
+                {item}
+              </li>
+            ),
+          )}
+        </ul>
+      </AccordionContent>
+    </AccordionItem>
   );
 };

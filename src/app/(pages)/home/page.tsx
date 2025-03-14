@@ -1,8 +1,8 @@
 import { Carousel } from "@/shared/components/carousel";
 import { Title } from "@/shared/components/title";
-import { me } from "@/shared/data/const";
+import { me } from "@/shared/data/me";
 
-const Home = () => {
+const Page = () => {
   return (
     <div className="flex flex-col gap-8">
       <Title text={me.name} />
@@ -12,4 +12,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Page;

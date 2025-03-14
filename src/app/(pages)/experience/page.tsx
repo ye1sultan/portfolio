@@ -1,36 +1,24 @@
 import { BlogItem } from "@/shared/components/blog-item";
 import { Title } from "@/shared/components/title";
-import { education, experience } from "@/shared/data/const";
+import { Accordion } from "@/shared/components/ui/accordion";
+import { experience } from "@/shared/data/experience";
 
-const Blog = () => {
+const Page = () => {
   return (
-    <>
-      <div className="flex flex-col gap-8">
-        <Title text="Experience" />
+    <div className="flex flex-col gap-8">
+      <Title text="Experience" />
+      <Accordion
+        type="single"
+        defaultValue={experience[0]?.name}
+        collapsible
+        className="w-full"
+      >
         {experience.map((item, index) => (
-          <BlogItem
-            key={index}
-            name={item.name}
-            date={item.date}
-            link={item.link}
-            description={item.description}
-          />
+          <BlogItem key={index} {...item} />
         ))}
-        <div className="flex flex-col gap-8">
-          <Title text="Education" />
-          {education.map((item, index) => (
-            <BlogItem
-              key={index}
-              name={item.name}
-              date={item.date}
-              link={item.link}
-              description={item.description}
-            />
-          ))}
-        </div>
-      </div>
-    </>
+      </Accordion>
+    </div>
   );
 };
 
-export default Blog;
+export default Page;

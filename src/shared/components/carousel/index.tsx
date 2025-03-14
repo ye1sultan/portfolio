@@ -1,4 +1,4 @@
-import { me } from "@/shared/data/const";
+import { me } from "@/shared/data/me";
 import Link from "next/link";
 
 export const Carousel = () => {
