@@ -14,11 +14,11 @@ export const Footer = () => {
   };
 
   return (
-    <div className="flex gap-6 flex-col xs:flex-row">
+    <div className="flex gap-6 flex-col sm:flex-row">
       <Button
         onClick={handleCVDownload}
         variant="link"
-        className="flex gap-1 items-center text-base font-normal px-0"
+        className="flex gap-1 items-center text-base font-normal p-0 w-fit h-fit"
       >
         <MemoArrow className="text-xl rotate-45" />
         download cv
