@@ -7,10 +7,7 @@ import { socials } from "./lib/const";
 
 export const Footer = () => {
   const handleCVDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/cv.pdf";
-    link.download = "Niyaztay_Yelsultan_CV.pdf";
-    link.click();
+    window.open("https://yelsultan.tiiny.site", "_blank");
   };
 
   return (
