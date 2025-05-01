@@ -3,7 +3,7 @@ import { IMe } from "../types/me";
 export const me: IMe = {
   name: "Yelsultan Niyaztay",
   about:
-    "I do my best at night when everything is quiet and I can really dive into coding. I'm convinced my productivity has a direct correlation with caffeine levels, so with Red Bull keeping me energized, I feel unstoppable. And it's all about finding that perfect workflow that lets me get things done faster and more effectively.",
+    "I do my best work when it’s quiet and I can get in the zone — usually late at night, headphones on, Red Bull nearby, deep in code. I’m all about flow and efficiency: building fast, clean, and scalable systems without the fluff. I’m constantly refining my workflow to move quicker and ship smarter. Whether it’s diving into new tech or pushing a product over the finish line, I bring energy, focus, and a high bar for quality to everything I build.",
   links: [
     {
       name: "node.js",

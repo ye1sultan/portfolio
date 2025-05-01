@@ -18,7 +18,7 @@ export const Footer = () => {
         className="flex gap-1 items-center text-base font-normal p-0 w-fit h-fit"
       >
         <MemoArrow className="text-xl rotate-45" />
-        download cv
+        cv
       </Button>
       {socials.map((item) => (
         <Link key={item.id} href={item.url} className="flex gap-1 items-center">

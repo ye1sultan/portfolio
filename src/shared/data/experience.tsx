@@ -8,17 +8,27 @@ export const experience: IBlog[] = [
     date: "Feb 25 - Present",
     link: "https://herosjourney.kz/",
     description: [
-      "Working as a full-stack developer, primarily focusing on building and maintaining the admin panel.",
       <Fragment key="1">
-        Developing scalable and efficient solutions using{" "}
-        <span className="font-bold">React</span>,{" "}
-        <span className="font-bold">Vite</span>,{" "}
-        <span className="font-bold">SCSS</span>,{" "}
-        <span className="font-bold">Node.js</span>,{" "}
-        <span className="font-bold">Express.js</span>, and{" "}
-        <span className="font-bold">MongoDB</span>.
+        Rewrote the legacy admin panel from scratch using{" "}
+        <span className="font-bold">Next.js</span> and{" "}
+        <span className="font-bold">Tailwind CSS</span>, boosting performance and user experience by over{" "}
+        <span className="font-bold">70%</span>.
       </Fragment>,
-      "Enhancing the admin panel’s functionality, performance, and user experience with a focus on seamless data management.",
+      <Fragment key="2">
+        Developed and maintained a POS panel using{" "}
+        <span className="font-bold">React</span> and{" "}
+        <span className="font-bold">Electron</span>, delivering a smooth and efficient desktop experience for in-store operations.
+      </Fragment>,
+      <Fragment key="3">
+        Built and shipped a cross-platform mobile application using{" "}
+        <span className="font-bold">React Native</span>, extending platform capabilities to mobile users.
+      </Fragment>,
+      <Fragment key="4">
+        Designed and maintained a scalable backend using{" "}
+        <span className="font-bold">Node.js</span>,{" "}
+        <span className="font-bold">GraphQL</span>, and{" "}
+        <span className="font-bold">MongoDB</span>, supporting complex queries and real-time data needs.
+      </Fragment>,
       <Link key={3} href="https://herosjourney.kz/">
         https://herosjourney.kz/
       </Link>,
