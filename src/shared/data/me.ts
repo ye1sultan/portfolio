@@ -3,7 +3,7 @@ import { IMe } from "../types/me";
 export const me: IMe = {
   name: "Yelsultan Niyaztay",
   about:
-    "I do my best work when it’s quiet and I can get in the zone — usually late at night, headphones on, Red Bull nearby, deep in code. I’m all about flow and efficiency: building fast, clean, and scalable systems without the fluff. I’m constantly refining my workflow to move quicker and ship smarter. Whether it’s diving into new tech or pushing a product over the finish line, I bring energy, focus, and a high bar for quality to everything I build.",
+    "Always up for a challenge. If you’re building something ambitious and need a front-end dev who obsesses over both polish and performance, let’s talk.",
   links: [
     {
       name: "typescript",
