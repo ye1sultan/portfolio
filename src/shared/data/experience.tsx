@@ -85,7 +85,7 @@ export const experience: IBlog[] = [
         Spearheaded the development of a new feature set that increased user
         engagement by <span className="font-bold">25%</span>, utilizing{" "}
         <span className="font-bold">React</span> and{" "}
-        <span className="font-bold">GraphQL</span>.
+        <span className="font-bold">REST APIs</span>.
       </Fragment>,
       <Link key="5" href="https://qtap.kz/">
         https://qtap.kz/
