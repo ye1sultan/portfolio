@@ -61,29 +61,31 @@ export const experience: IBlog[] = [
   },
   {
     name: "Qtap",
-    date: "Jan 24 - Jun 24",
+    date: "Jun 23 - Jun 24",
     link: "https://qtap.kz/",
     description: [
       <Fragment key="1">
-        Integrated <span className="font-bold">Jotai</span> and{" "}
-        <span className="font-bold">TanStack Query</span> to streamline
-        state/data logic across the app.
+        Led the migration of the entire codebase to{" "}
+        <span className="font-bold">TypeScript</span>, enhancing code quality
+        and reducing runtime errors by <span className="font-bold">40%</span>.
       </Fragment>,
       <Fragment key="2">
-        Refactored responsive UI with{" "}
-        <span className="font-bold">Tailwind</span> and{" "}
-        <span className="font-bold">Next.js</span>, cutting UI bugs by{" "}
-        <span className="font-bold">40%</span>.
+        Developed a comprehensive design system using{" "}
+        <span className="font-bold">Tailwind CSS</span> and{" "}
+        <span className="font-bold">Storybook</span>, ensuring consistent UI
+        components across the application.
       </Fragment>,
       <Fragment key="3">
-        Increased test coverage to <span className="font-bold">60%</span> using{" "}
-        <span className="font-bold">Jest</span> and{" "}
-        <span className="font-bold">React Testing Library</span>.
+        Implemented a CI/CD pipeline with{" "}
+        <span className="font-bold">GitHub Actions</span> to automate testing
+        and deployment, reducing deployment time by{" "}
+        <span className="font-bold">30%</span>.
       </Fragment>,
       <Fragment key="4">
-        Built 20+ transactional emails with{" "}
-        <span className="font-bold">React Email</span> to improve customer
-        engagement.
+        Spearheaded the development of a new feature set that increased user
+        engagement by <span className="font-bold">25%</span>, utilizing{" "}
+        <span className="font-bold">React</span> and{" "}
+        <span className="font-bold">GraphQL</span>.
       </Fragment>,
       <Link key="5" href="https://qtap.kz/">
         https://qtap.kz/
