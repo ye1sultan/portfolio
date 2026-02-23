@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeToggle } from "@/shared/components/theme-toggle";
 import { cn } from "@/shared/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -47,7 +46,6 @@ export const Header = () => {
             education
           </Link>
         </div>
-        <ThemeToggle />
       </nav>
     </header>
   );
