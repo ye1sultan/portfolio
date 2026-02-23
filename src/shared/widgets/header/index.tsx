@@ -1,5 +1,6 @@
 "use client";
 
+import { ThemeToggle } from "@/shared/components/theme-toggle";
 import { cn } from "@/shared/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,16 +14,40 @@ export const Header = () => {
 
   return (
     <header>
-      <nav className="flex items-center gap-6">
-        <Link href="/home" className={cn(isHome ? "border-b" : "")}>
-          home
-        </Link>
-        <Link href="/experience" className={cn(isExperience ? "border-b" : "")}>
-          experience
-        </Link>
-        <Link href="/education" className={cn(isEducation ? "border-b" : "")}>
-          education
-        </Link>
+      <nav className="flex items-center justify-between">
+        <div className="flex items-center gap-6">
+          <Link
+            href="/home"
+            className={cn(
+              isHome
+                ? "border-b border-neutral-900 dark:border-neutral-50"
+                : "",
+            )}
+          >
+            home
+          </Link>
+          <Link
+            href="/experience"
+            className={cn(
+              isExperience
+                ? "border-b border-neutral-900 dark:border-neutral-50"
+                : "",
+            )}
+          >
+            experience
+          </Link>
+          <Link
+            href="/education"
+            className={cn(
+              isEducation
+                ? "border-b border-neutral-900 dark:border-neutral-50"
+                : "",
+            )}
+          >
+            education
+          </Link>
+        </div>
+        <ThemeToggle />
       </nav>
     </header>
   );

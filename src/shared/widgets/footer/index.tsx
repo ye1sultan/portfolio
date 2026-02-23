@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/shared/components/ui/button";
-import MemoArrow from "@/shared/icons/arrow";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { socials } from "./lib/const";
 
@@ -17,12 +17,16 @@ export const Footer = () => {
         variant="link"
         className="flex gap-1 items-center text-base font-normal p-0 w-fit h-fit"
       >
-        <MemoArrow className="text-xl rotate-45" />
+        <ArrowTopRightIcon />
         cv
       </Button>
       {socials.map((item) => (
-        <Link key={item.id} href={item.url} className="flex gap-1 items-center">
-          <item.icon className="text-xl rotate-45" />
+        <Link
+          key={item.id}
+          href={item.url}
+          className="flex gap-1 items-center text-neutral-900 dark:text-neutral-50 hover:opacity-70 transition-opacity"
+        >
+          <item.icon />
           {item.label}
         </Link>
       ))}

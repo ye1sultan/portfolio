@@ -1,4 +1,5 @@
 import { cn } from "@/shared/lib/utils";
+import { ThemeProvider } from "@/shared/components/theme-provider";
 import { Footer } from "@/shared/widgets/footer";
 import { Header } from "@/shared/widgets/header";
 import { Metadata } from "next";
@@ -36,16 +37,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-neutral-950 antialiased text-neutral-50 container py-10 tracking-wide px-4 sm:px-8",
+          "bg-white antialiased text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50 container py-10 tracking-wide px-4 sm:px-8",
           overpass.className,
         )}
       >
-        <Header />
-        <main className="w-full pt-16 mb-[10%]">{children}</main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <main className="w-full pt-16 mb-[10%]">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
