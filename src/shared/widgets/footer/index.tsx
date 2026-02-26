@@ -8,7 +8,7 @@ import { socials } from "./lib/const";
 
 export const Footer = () => {
   const handleCVDownload = () => {
-    window.open("https://yelsultan.tiiny.site", "_blank");
+    window.open("https://jumpshare.com/s/laETju1MWZu9idQu35gu", "_blank");
   };
 
   return (
